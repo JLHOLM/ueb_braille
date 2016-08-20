@@ -1,8 +1,8 @@
 require "ueb_braille/version"
 
 module UebBraille
-  
   UEB = {
+      ' ' => '⠀',
       'a' => '⠁',
       'b' => '⠃',
       'c' => '⠉',
@@ -29,11 +29,30 @@ module UebBraille
       'x' => '⠭',
       'y' => '⠽',
       'z' => '⠵',
-      'space' => '⠀'
+      'number' => '⠼',
+      '1' => '⠁',
+      '2' => '⠃',
+      '3' => '⠉',
+      '4' => '⠙',
+      '5' => '⠑',
+      '6' => '⠋',
+      '7' => '⠛',
+      '8' => '⠓',
+      '9' => '⠊',
+      '0' => '⠚',
 
   }.freeze
 
   def self.process(str)
-    return str.downcase
+    str = str.downcase.split(",")
+
+    UEB.each do |search, replace|
+      str.each do |s|
+        s.gsub!(search) { " #{replace}" }
+      end
+    end
+
+
+    return str
   end
 end

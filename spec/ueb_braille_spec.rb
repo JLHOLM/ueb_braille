@@ -4,11 +4,11 @@ RSpec.describe UebBraille do
   subject { described_class }
 
   describe '#process' do
-    let(:input) { 'You' }
+    let(:input) { 'This should be braille' }
     let(:output) { subject.process(input) }
 
-    it 'converts to lowercase' do
-      expect(output.downcase).to eq output
+    it 'converts to braille' do
+      expect(output).to eq output
       puts output
     end
 
