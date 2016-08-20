@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Justin Holm"]
   spec.email         = ["jlholmz@gmail.com"]
 
-  spec.summary       = %q{Convert English plain text to UEB braille.}
+  spec.summary       = %q{English plain text to UEB braille.}
   spec.description   = %q{UEB Braille allows the conversion of plain text English to UEB standard braille.}
   spec.homepage      = "https://github.com/JLHOLM/ueb_braille"
   spec.license       = "MIT"
