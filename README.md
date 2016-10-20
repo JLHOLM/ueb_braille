@@ -2,7 +2,6 @@
 
 UEB Braille allows the conversion of plain text English to UEB Braille, can be used within web apps or standalone.
 
-TODO: Delete this and the text above, and describe your gem
 
 ## Installation
 
